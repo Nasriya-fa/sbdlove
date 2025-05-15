@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday My Love 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="hearts"></canvas>
+
+<div class="container">
+  <h1>Happy Birthday, My Love 💖</h1>
+  <div class="typewriter">
+    Every heartbeat of mine whispers your name... You are my forever 💌
+  </div>
+  <button onclick="showLetter()">To My Ammu</button>
+  <button onclick="showGallery()">Our Memories</button>
+</div>
+
+<!-- Love Letter Modal -->
+<div class="modal" id="loveModal">
+  <div class="modal-card">
+    <span class="close" onclick="hideLetter()" aria-label="Close">&times;</span>
+    <div class="card-content">
+      <div class="text">
+        <h2>💖 My Heartfelt Letter</h2>
+        <p>
+          Dear Ammu,<br><br>
+          <strong>You’ve been my strength, and also my weakness.</strong><br>
+          From the first day I met you, you’ve given me nothing but pure love.<br>
+          I’m truly blessed to have you by my side.<br><br>
+          I know I’m not perfect — <strong>not yet good enough for you.</strong><br>
+          But I’ll keep improving every single day, just to build the peaceful, loving home you deserve.<br><br>
+          <strong>Trust me, Ammu — I’ll do anything for you.</strong><br><br>
+          I know you get annoyed with my avasarapudhi nature.<br>
+          I will change that. For you. Because you matter more than my habits.<br><br>
+          On your special day, I just want to say one thing:<br>
+          <strong>I love you more than anything in this world.</strong><br>
+          You are my life, and I will wait for you till the very end.<br><br>
+          Thank you for standing by me through every hard time.<br>
+          I don’t want to just celebrate this birthday — I want to grow old with you.<br>
+          Even after 10,000 fights... I will still choose you. I only need you.<br><br>
+          Love you forever,<br>
+          — Your Life ❤️
+        </p>
+      </div>
+      <div class="image">
+        <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/10be5bcd-35ab-407e-bb76-08b0640251d0/950e16fe-fe57-434a-a832-4e0f3cd2c1a2.webp" alt="Love Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal" id="videoModal">
+  <div class="video-container">
+    <button onclick="hideGallery()" style="position:absolute;top:20px;left:20px;background:none;border:none;color:white;font-size:16px;cursor:pointer;z-index:1001;">← Go Back</button>
+    <video autoplay muted loop controls playsinline>
+      <source src="H:\SBD\OurDays.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<!-- Music -->
+<audio id="bgm" autoplay loop>
+  <source src="H:\SBD\BGM.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
